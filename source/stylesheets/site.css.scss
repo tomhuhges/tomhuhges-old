@@ -29,7 +29,14 @@ h1 {
   color: #0000ff;
 }
 
-.title { font-size: 8em; }
+.title {
+  font-size: 8em;
+  //transform: scale(1,1);
+  //transform-origin: top;
+  //position: fixed;
+  //right: 0;
+  //left: 0;
+}
 
 .ziclets {
   font-family: 'Astloch', 'Ziclets', sans-serif;
@@ -44,9 +51,12 @@ nav {
   font-family: inconsolata;
 }
 
+.navbar-header { display: inline; }
+
 #posts { 
   width: 80%;
   margin: 0 auto;
+  //padding-top: 10em;
 }
 
 #posts .paged {
@@ -76,9 +86,9 @@ article.link {
     background: #bbb;
     line-height: 0;
 
-    figure { margin:0;
+    figure { margin:0; background: #bbb;
 
-      img { max-width: 100%; }
+      img { max-width: 100%; opacity: 0.9; }
     }
 
   }
