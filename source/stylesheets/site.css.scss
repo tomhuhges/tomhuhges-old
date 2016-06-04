@@ -1,9 +1,19 @@
 @charset "utf-8";
 @import "normalize";
 
+@font-face {
+  font-family: 'Ziclets';
+  src: url('../fonts/Ziclets-webfont.woff') format('woff')
+}
+
+* { outline: none; }
+
 body {
+  font-size: 0.9em;
+  font-family: 'helvetica neue';
+  color: #333;
   text-align: center;
-  font-size: 1em;
+  text-transform: lowercase;
 }
 
 .logo img {
@@ -13,9 +23,67 @@ body {
 
 h1 {
   color: rgba(0,0,0,0.5);
-  font-size: 1.8em;
+  font-size: 3.5em;
   font-weight: 400;
   margin: 0;
+  color: #0000ff;
+}
+
+.title { font-size: 8em; }
+
+.ziclets {
+  font-family: 'Astloch', 'Ziclets', sans-serif;
+}
+
+a {
+  color: #444;
+  text-decoration: none;
+}
+
+nav {
+  font-family: inconsolata;
+}
+
+#posts { 
+  width: 80%;
+  margin: 0 auto;
+}
+
+#posts .paged {
+  display:flex;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top:.5em;
+}
+
+article.link {
+  display: inline-block;
+  flex-basis: 33.33%;
+  width:25%;
+  text-align: left;
+
+  .post-wrapper { padding: 5%; }
+
+  .link-text-wrapper { padding: 0 20px; }
+
+  .link-excerpt { margin: 15px 0; line-height: 1.5; }
+
+  .link-author { font-size: 0.9em; opacity: .5; }
+
+  .link-thumbnail {
+
+    background: #bbb;
+    line-height: 0;
+
+    figure { margin:0;
+
+      img { max-width: 100%; }
+    }
+
+  }
+
+  .link-img { max-width: 100%; opacity: 0.9; }
 }
 
 .doc {

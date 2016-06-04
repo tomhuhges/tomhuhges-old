@@ -2,7 +2,7 @@
 
 
 
-    var tomhuhges = angular.module('tomhuhges', ['ngRoute']);
+    var tomhuhges = angular.module('tomhuhges', ['ngRoute', 'ngSanitize']);
 
     // configure our routes
     tomhuhges.config(function($routeProvider) {
@@ -60,7 +60,7 @@
 	tomhuhges.controller('linkdumpController', function($scope, $http) {
 
 		var apikey = 'nlp5yalB647VfKtyzwxdmFR4zUbzmDxB5pAHqAGsx6mGCoVGpU';
-		var jsonurl = 'http://api.tumblr.com/v2/blog/tomhuhgeslinkdump.tumblr.com/posts/link?api_key='+apikey+'&limit=5&callback=JSON_CALLBACK';
+		var jsonurl = 'http://api.tumblr.com/v2/blog/tomhuhgeslinkdump.tumblr.com/posts/link?api_key='+apikey+'&callback=JSON_CALLBACK';
 
 		$http.jsonp(jsonurl)
 			.success (function(result) {

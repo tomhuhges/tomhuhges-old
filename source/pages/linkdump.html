@@ -1,0 +1,48 @@
+<!-- dump them links -->
+
+    
+
+
+<div class="jumbotron text-center">
+
+<h1 class="title ziclets">link dump</h1>
+
+<section id="posts" class="content">
+
+	<div class="paged" data-page-id="1">
+                    
+		<article class="link post-{{ post.id }}" data-post-id="post-{{ post.id }}" ng-repeat="post in posts">
+		    <div class="post-wrapper">
+		        
+		        <section class="post">
+
+		            <div class="post-content with-thumbnail">
+                
+						<div class="link-wrapper">
+
+						    <a target="_blank" ng-href="{{ post.url }}" class="link">
+						        
+						        <div class="link-thumbnail">
+						        <img ng-if="post.link_image" class="link-img" ng-src="{{ post.link_image }}" alt="">
+						        <div ng-if="post.description"><div ng-bind-html="post.description"></div></div>
+						        </div>
+						        
+						        <div class="link-text-wrapper">
+						            <div class="link-text">
+						                <h2 class="link-title">{{ post.title }}</h2>
+						                
+						                <div class="link-excerpt">{{ post.excerpt }}</div>
+						                
+						                <div class="link-author"><span ng-if="post.link_author">{{post.link_author}} | </span>{{ post.publisher }}</div>
+						            </div>
+						        </div>
+						    </a>
+						</div>
+		            </div>
+		        </section>        
+		    </div>
+		</article>
+	</div>
+</section>
+
+</div>

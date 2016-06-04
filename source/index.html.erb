@@ -1,13 +1,25 @@
 ---
-title: Welcome to Middleman
+title: $ tom huhges
 ---
 
-<div class="welcome">
-  <div class="logo">
-    <%= image_tag "middleman-logo.svg" %>
-  </div>
-  <h1>Middlemany is Running</h1>
-  <p class="doc">
-    <%= link_to "Read Documentation Online", "https://middlemanapp.com", target: "_blank" %>
-  </p><!-- .doc -->
-</div><!-- .welcome -->
+
+
+    <div ng-controller="mainController">
+
+            <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/">$ tom huhges</a>
+                </div>
+                <a href="#art"># art</a>
+                <a href="#code"># code</a>
+                <a href="#writing"># writing</a>
+                <a href="#linkdump"># linkdump</a>
+            </div>
+            </nav>
+
+    <div id="main">
+
+        <div ng-view></div>
+
+    </div>
