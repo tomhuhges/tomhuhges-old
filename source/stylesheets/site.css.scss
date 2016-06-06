@@ -48,10 +48,21 @@ a {
 }
 
 nav {
-  font-family: inconsolata;
+  width: 100%;
+  position: fixed;
+  padding: 1em 0;
+  top: 0;
+  z-index: 1;
+  background: #fff;
+  font-family: 'Astloch', 'Ziclets', sans-serif;
+  font-size: 1.5em;
+
+  a { margin: 2.5em; }
 }
 
-.navbar-header { display: inline; }
+.navbar-header { display: inline; font-family: 'inconsolata'; }
+
+#main { margin-top: 4em; }
 
 #posts { 
   width: 80%;
