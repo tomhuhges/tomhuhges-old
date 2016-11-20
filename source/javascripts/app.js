@@ -40,12 +40,10 @@
 
     // create the controller and inject Angular's $scope
     tomhuhges.controller('mainController', function($scope) {
-        // create a message to display in our view
         $scope.message = 'home';
     });
 
     tomhuhges.controller('artController', function($scope) {
-        // create a message to display in our view
         $scope.message = 'art';
     });
 
@@ -71,5 +69,17 @@
 			});
 
 	});
+
+
+    /*$(window).scroll(function(){
+      var scrollTop = $(window).scrollTop();
+      scrollTop = (100 - scrollTop) /100;
+      console.log(scrollTop);
+      if (scrollTop > 0 ) {
+        $('h1.title').css({'transform': 'scale(1, '+scrollTop+')'});
+      } else {
+        $('h1.title').css({'transform': 'scale(1, 0)'});
+      }
+    });*/
 
     
