@@ -1,0 +1,27 @@
+{
+  "name": "tomhuhges-test",
+  "version": "1.0.0",
+  "description": "personal web hub",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --content-base docs/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomhuhges/tomhuhges-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tomhuhges/tomhuhges-test/issues"
+  },
+  "homepage": "https://github.io/tomhuhges-test",
+  "devDependencies": {
+    "webpack": "^1.13.3",
+    "webpack-dev-server": "^1.16.2"
+  }
+}
