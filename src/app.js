@@ -1,3 +1,8 @@
 require('./logger');
 
-console.log("working");
+document.write('hiya');
+document.write('hiya');
+console.log('working');
+
+
+
