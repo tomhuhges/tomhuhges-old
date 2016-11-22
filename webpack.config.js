@@ -1,7 +1,14 @@
+const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+
 module.exports = {
-  entry: ['./src/app.js'],
+  entry: {
+	bundle: './src/app.js'
+  },
   output: {
-    filename: './docs/bundle.js',
+    path: './docs',
+    filename: '[name].js',
   }, 
   watch: true,
   devServer: { inline: true },
@@ -24,11 +31,25 @@ module.exports = {
 		},
 		{
 			test: /\.css$/,
-			loader: 'style-loader!css-loader'
+			loader: 'style-loader!css-loader',
+			include: './src/css'
 		}
 	]
   },
   eslint: {
     configFile: './.eslintrc'
-  }
+  },
+  plugins: [
+    new webpack.optimize.UglifyJsPlugin({
+      comments: false,
+      compress: {
+        warnings: false
+      },
+      mangle: {
+        except: ['webpackJsonp']
+      }
+    }),
+    //new HtmlWebpackPlugin({ title: 'tom hughes - js developer' }),
+    new CopyWebpackPlugin([{ from: './src/assets', to: 'assets' },])
+  ]
 };
