@@ -1,6 +1,13 @@
-document.write('hiya');
-document.write('hiya');
-console.log('working');
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-let x = 9;
-console.log(x);
+let Site = React.createClass({
+	render: function () {
+		return (<p>hiya</p>);
+	}
+});
+
+ReactDOM.render(
+	<Site />,
+	document.getElementById('app')
+);

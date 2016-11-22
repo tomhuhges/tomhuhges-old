@@ -1,6 +1,7 @@
 {
 	"rules": {
 		"no-console": 0,
+		"no-unused-vars": 0,
 		"quotes": [1, "single"],
 		"semi": [2, "always"]
 	},
