@@ -1,7 +1,7 @@
 module.exports = {
-  entry: './src/app.js',
+  entry: ['./src/app.js'],
   output: {
-    filename: './docs/bundle.js'
+    filename: './docs/bundle.js',
   }, 
   watch: true,
   devServer: { inline: true },
@@ -21,6 +21,9 @@ module.exports = {
 			query: {
 				presets: ['react', 'es2015']
 			}
+		},
+		{
+			test: /\.css$/, loader: 'style!css'
 		}
 	]
   },
