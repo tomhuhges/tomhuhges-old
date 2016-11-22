@@ -50,6 +50,8 @@ module.exports = {
       }
     }),
     //new HtmlWebpackPlugin({ title: 'tom hughes - js developer' }),
-    new CopyWebpackPlugin([{ from: './src/assets', to: 'assets' },])
+    new CopyWebpackPlugin(
+      [{ from: './src/assets', to: 'assets' }],
+      {ignore: ['*.DS_Store']})
   ]
 };
