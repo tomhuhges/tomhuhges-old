@@ -1,48 +1,18 @@
 {
-  "name": "tomhuhges-test",
-  "version": "1.0.0",
-  "description": "",
-  "main": "app/index.js",
-  "dependencies": {
-    "react": "^15.4.1",
-    "webpack": "^1.13.3"
-  },
+  "name": "tomhuhges-new",
+  "version": "0.1.0",
+  "private": true,
   "devDependencies": {
-    "babel-core": "^6.18.2",
-    "babel-eslint": "^7.1.1",
-    "babel-loader": "^6.2.8",
-    "babel-preset-es2015": "^6.18.0",
-    "babel-preset-react": "^6.16.0",
-    "babel-register": "^6.18.0",
-    "clean-webpack-plugin": "^0.1.14",
-    "css-loader": "^0.26.0",
-    "eslint": "^3.10.2",
-    "eslint-loader": "^1.6.1",
-    "extract-text-webpack-plugin": "^1.0.1",
-    "fetch-jsonp": "^1.0.6",
-    "fg-loadcss": "^1.2.0",
-    "file-loader": "^0.9.0",
-    "gh-pages": "^0.12.0",
-    "html-webpack-plugin": "^2.24.1",
-    "jsonp": "^0.2.1",
-    "purifycss-loader": "^1.0.1",
-    "react-addons-css-transition-group": "^15.4.2",
-    "style-loader": "^0.13.1",
-    "svg-react-loader": "^0.3.7",
-    "tachyons": "^4.6.2",
-    "url-loader": "^0.5.7",
-    "webpack": "^1.13.3",
-    "webpack-dev-server": "^1.16.2",
-    "webpack-merge": "^0.17.0",
-    "webpack-validator": "^2.2.9"
+    "react-scripts": "1.0.17"
+  },
+  "dependencies": {
+    "react": "^16.1.0",
+    "react-dom": "^16.1.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server",
-    "build": "webpack -p",
-    "deploy": "npm run build && surge dist tomhuhges.com",
-    "deploy-old": "npm run build && git add . && git cam \"$m\" && git push && gh-pages -d dist"
-  },
-  "author": "",
-  "license": "ISC"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
 }
