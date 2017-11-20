@@ -5,7 +5,9 @@
     "node": "9.1.0"
   },
   "private": true,
-  "devDependencies": {},
+  "devDependencies": {
+    "codecov": "^3.0.0"
+  },
   "dependencies": {
     "autoprefixer": "7.1.6",
     "babel-core": "6.26.0",
