@@ -7,6 +7,7 @@ class App extends Component {
     return (
       <div className="App">
         <img className="under-construction" src={logo} alt="under construction" />
+        <p />
       </div>
     );
   }
