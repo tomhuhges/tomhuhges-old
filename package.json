@@ -52,7 +52,7 @@
     "build": "node scripts/build.js",
     "deploy": "now && now alias",
     "test": "node scripts/test.js --env=jsdom",
-    "start": "serve --single ./build"
+    "start": "npm run build && serve --single ./build"
   },
   "now": {
     "alias": "tomhuhges"
