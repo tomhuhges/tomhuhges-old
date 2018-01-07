@@ -6,7 +6,10 @@
   },
   "private": true,
   "devDependencies": {
-    "codecov": "^3.0.0"
+    "codecov": "^3.0.0",
+    "@storybook/react": "^3.3.3",
+    "@storybook/addon-actions": "^3.3.3",
+    "@storybook/addon-links": "^3.3.3"
   },
   "dependencies": {
     "autoprefixer": "7.1.6",
@@ -59,7 +62,9 @@
     "build": "node scripts/build.js",
     "deploy": "now && now alias",
     "test": "node scripts/test.js --env=jsdom && codecov",
-    "start": "npm run build && serve --single ./build"
+    "start": "npm run build && serve --single ./build",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "now": {
     "alias": "tomhuhges"
